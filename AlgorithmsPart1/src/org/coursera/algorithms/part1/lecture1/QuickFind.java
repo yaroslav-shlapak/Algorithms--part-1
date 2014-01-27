@@ -1,4 +1,4 @@
-package org.coursera.algorithms.part1;
+package org.coursera.algorithms.part1.lecture1;
 
 public class QuickFind {
 	
