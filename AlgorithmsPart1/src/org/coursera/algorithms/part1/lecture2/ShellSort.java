@@ -1,5 +1,7 @@
 package org.coursera.algorithms.part1.lecture2;
 
+import org.coursera.algorithms.part1.utils.FrameSort;
+
 public class ShellSort extends FrameSort {
 	public static void sort(Comparable[] a) {
 		int N = a.length;

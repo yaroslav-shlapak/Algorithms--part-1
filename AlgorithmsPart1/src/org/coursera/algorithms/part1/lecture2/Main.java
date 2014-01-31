@@ -1,20 +1,13 @@
 package org.coursera.algorithms.part1.lecture2;
 
+import org.coursera.algorithms.part1.utils.ComparableHelper;
+
 public class Main {
 	public static void main(String[] args) throws InterruptedException {
-		Comparable[] a = new Comparable[100];
-		ComparableHelper.fillComparable(a);
-		StdRandom.shuffle(a);
+		Comparable[] a = {41, 43, 53, 64, 91, 46, 88, 71, 14, 34};
 		ComparableHelper.printComparable(a);
-		Comparable[] b = ComparableHelper.copyComparable(a);
-		ComparableHelper.printComparable(b);
-		SelectionSort.sort(b);
-		ComparableHelper.printComparable(b);
-		StdRandom.shuffle(b);
-		ComparableHelper.printComparable(b);
-		InsertionSort.sort(b);
-		ComparableHelper.printComparable(b);
-
-		
+		InsertionSort.sort(a);
+		ComparableHelper.printComparable(a);
+	
 	}
 }

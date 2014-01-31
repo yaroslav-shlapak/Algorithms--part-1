@@ -1,4 +1,4 @@
-package org.coursera.algorithms.part1.lecture2;
+package org.coursera.algorithms.part1.utils;
 
 public class ComparableHelper {
 	public static void printComparable(Comparable[] a) {

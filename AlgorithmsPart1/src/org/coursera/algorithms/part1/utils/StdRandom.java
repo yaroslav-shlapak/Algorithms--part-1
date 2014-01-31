@@ -1,4 +1,4 @@
-package org.coursera.algorithms.part1.lecture2;
+package org.coursera.algorithms.part1.utils;
 
 public class StdRandom extends FrameSort{
 	private static int uniform(int i, int N) throws InterruptedException{
@@ -14,10 +14,16 @@ public class StdRandom extends FrameSort{
 		return ret;
 	}
 	
-	public static void shuffle(Comparable[] a) throws InterruptedException {
+	public static void shuffle(Comparable[] a) {
 		int N = a.length;
 		for (int i = 0; i < N; i++) {
-			int r = StdRandom.uniform(i, N);
+			int r = 0;
+			try {
+				r = StdRandom.uniform(i, N);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			exch(a, i, r);
 		}
 	}
